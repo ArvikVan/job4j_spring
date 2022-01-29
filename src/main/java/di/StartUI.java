@@ -1,10 +1,14 @@
 package di;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author ArvikV
- * @version 1.0
+ * @version 1.1
  * @since 28.01.2022
+ * помечаем для регистрации в контексте
  */
+@Component
 public class StartUI {
     private Store store;
     private ConsoleInput consoleInput;
