@@ -1,6 +1,7 @@
 package di;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
  * C помощью сеттера и аннотации
  */
 @Component
+@Scope("prototype")
 public class StartUI {
     @Autowired
     private Store store;

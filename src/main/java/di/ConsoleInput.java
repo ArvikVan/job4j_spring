@@ -1,5 +1,6 @@
 package di;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
@@ -11,6 +12,7 @@ import java.util.Scanner;
  * помечаем для регистрации в контексте
  */
 @Component
+@Scope("prototype")
 public class ConsoleInput {
     private Scanner scanner = new Scanner(System.in);
 

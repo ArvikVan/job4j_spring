@@ -1,5 +1,6 @@
 package di;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.List;
  * помечаем для регистрации в контексте
  */
 @Component
+@Scope("prototype")
 public class Store {
     private List<String> data = new ArrayList<String>();
 
